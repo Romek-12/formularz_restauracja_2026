@@ -1039,7 +1039,12 @@
 
 <script>
     function ml_webform_success_36889876() {
-        // Bez przekierowania - pokaż komunikat "Do zobaczenia!"
+        // Ukryj formularz
+        var formBody = document.querySelector('.ml-form-embedBody');
+        if (formBody) formBody.style.display = 'none';
+        // Pokaż komunikat sukcesu
+        var successBody = document.querySelector('.ml-form-successBody');
+        if (successBody) successBody.style.display = 'block';
     }
 </script>
 
